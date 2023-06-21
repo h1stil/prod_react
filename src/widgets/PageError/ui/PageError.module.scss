@@ -1,0 +1,17 @@
+.PageError {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font: var(--font-l);
+  }
+
+  button {
+    font: var(--font-m);
+  }
+}
