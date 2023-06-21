@@ -1,12 +1,12 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import { useTranslation } from "react-i18next";
-import Button, { ThemeButton } from "shared/ui/Button/Button";
+import { Button, ThemeButton } from "shared/ui/Button/Button";
 
 interface LanguageSwitcherProps {
   className?: string;
 }
 
-const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
+export const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
