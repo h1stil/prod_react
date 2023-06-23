@@ -21,7 +21,8 @@ export const LanguageSwitcher = ({
     <Button
       className={classNames("", {}, [className])}
       theme={ThemeButton.CLEAR}
-      onClick={toggleLanguage}>
+      onClick={toggleLanguage}
+    >
       {t(short ? "Короткий язык" : "Язык")}
     </Button>
   );

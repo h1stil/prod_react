@@ -28,7 +28,8 @@ export const Sidebar = ({ className }: SidebarProps) => {
       data-testid="sidebar"
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
         className,
-      ])}>
+      ])}
+    >
       <Button
         data-testid="sidebar-toggle"
         type="button"
@@ -36,20 +37,27 @@ export const Sidebar = ({ className }: SidebarProps) => {
         className={cls.collapseBtn}
         theme={ThemeButton.BACKGROUND_INVERTED}
         square
-        size={SizeButton.L}>
+        size={SizeButton.L}
+      >
         {collapsed ? ">" : "<"}
       </Button>
       <div className={cls.items}>
         <div className={cls.item}>
           <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.main}>
             <MainIcon className={cls.icon} />
-            <span className={cls.link}> {t("Главная страница")}</span>
+            <span className={cls.link}>
+              {' '}
+              {t("Главная страница")}
+            </span>
           </AppLink>
         </div>
         <div className={cls.item}>
           <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.about}>
             <AboutIcon className={cls.icon} />
-            <span className={cls.link}> {t("О сайте")}</span>
+            <span className={cls.link}>
+              {' '}
+              {t("О сайте")}
+            </span>
           </AppLink>
         </div>
       </div>
