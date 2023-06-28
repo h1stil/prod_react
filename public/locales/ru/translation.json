@@ -10,6 +10,8 @@
     "Открыть/закрыть меню": "Toggle",
     "Войти": "Войти",
     "Decrement": "Decrement",
-    "Increment": "Increment"
+    "Increment": "Increment",
+    "Введите имя": "Введите имя",
+    "Введите пароль": "Введите пароль"
 
 }
