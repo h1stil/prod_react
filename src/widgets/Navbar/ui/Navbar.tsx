@@ -35,7 +35,8 @@ export const Navbar = ({ className }: NavbarProps) => {
         <Button
           theme={ThemeButton.CLEAR_INVERTED}
           className={cls.links}
-          onClick={onLogout}>
+          onClick={onLogout}
+        >
           {t("Выйти")}
         </Button>
       </div>
@@ -47,10 +48,13 @@ export const Navbar = ({ className }: NavbarProps) => {
       <Button
         theme={ThemeButton.CLEAR_INVERTED}
         className={cls.links}
-        onClick={onOpenModal}>
+        onClick={onOpenModal}
+      >
         {t("Войти")}
       </Button>
-      <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+      {isAuthModal && (
+        <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+      )}
     </div>
   );
 };

@@ -6,7 +6,6 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { useTheme } from "app/providers/ThemeProvider";
 import { Portal } from "shared/ui/Portal/Portal";
 import cls from "./Modal.module.scss";
 

@@ -47,7 +47,8 @@ export const Button: FC<ButtonProps> = (props) => {
       type="button"
       className={classNames(cls.Button, mods, [className])}
       {...otherProps}
-      disabled={disabled}>
+      disabled={disabled}
+    >
       {children}
     </button>
   );
