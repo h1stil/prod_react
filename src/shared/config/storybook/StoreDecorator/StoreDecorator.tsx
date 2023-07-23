@@ -1,7 +1,7 @@
 import { Story } from "@storybook/react";
 import { StateSchema, StoreProvider } from "app/providers/StoreProvider";
 import { DeepPartial } from "app/types/global";
-import { profileReducer } from "entities/Profile/intex";
+import { profileReducer } from "entities/Profile";
 import { loginReducer } from "features/AuthByUsername/model/slice/loginSlice";
 import { ReducersList } from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
 

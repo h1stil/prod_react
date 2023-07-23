@@ -1,14 +1,38 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "users": [{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "users": [
+    {
       "id": "1",
       "username": "admin",
       "password": "123"
-    }],
-    "profile": { "name": "typicode" }
+    }
+  ],
+  "profile": {
+    "firstname": "Ильмир",
+    "lastname": "Кавыев",
+    "age": 24,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Ufa",
+    "username": "admin213",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDEoBqcrHSlyg42qnvUvchvCLgbUc_JKPfYQ&usqp=CAU"
   }
+}
